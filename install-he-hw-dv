@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat hw-hebrew-dvorak | sudo tee -a /usr/share/X11/xkb/symbols/il
+
+sudo cp -fr base.lst /usr/share/X11/xkb/rules/base.lst
+sudo cp -fr evdev.lst /usr/share/X11/xkb/rules/evdev.lst
+sudo cp -fr base.xml /usr/share/X11/xkb/rules/base.xml
+sudo cp -fr evdev.xml /usr/share/X11/xkb/rules/evdev.xml
+
